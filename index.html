@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Task App</title>   
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./front.js" defer></script>
+    <link rel="icon" href="./assets/lista-de-afazeres.png" type="image/png">
+    </head>
+
+    <body>
+
+        <div class="root" id="root">
+            <h2 class="h2Confirm" id="h2Confirm"></h2>
+
+            <header class="header" id="header">
+                <h2>Lista de Tarefas</h2>
+                <div class="location">Tarefas de Hoje</div>
+                <img class="icon-task" src="./assets/lista-de-afazeres.png" alt="Sua localização">
+                <img class="icon-task-theme" id="icon-task-theme" src="./assets/sol.png" alt="Mudar Tema">
+            </header>
+            
+            <section class="section">
+                <h3 id="themeTitle">Tarefas disponíveis</h3>
+            </section>
+
+            <div class="task-list" id="task-list">
+                <!-- Card inserido com js dinamicamente 😼😼 -->
+            </div>
+
+            <footer class="footer">
+                <div class="back-img" id="back-img-id">
+                    <img src="./assets/sinal.png" alt="Criar nova tarefa">
+                </div>
+            </footer>
+        </div>
+
+
+        <div class="modalAddNewTask" id="modalTask">
+            <div class="requestTaskInfos">
+                <p id="close">x</p>
+                <h2 id="infoTask" >Cadastre sua nova tarefa!</h2>
+                <input type="text" id="name" placeholder="Nome da Tarefa">
+                <textarea type="text" id="descTask" placeholder="Descrição da Tarefa"></textarea>
+                <button class="registerTask" id="registerTaskButton">Criar</button>
+                <span class="notice" id="notice"></span>
+            </div>
+        </div>
+
+        <div class="modalAddNewTask" id="modalTaskPut">
+            <div class="requestTaskInfos">
+                <p id="closePut">x</p>
+                <h2 id="infoTaskPut" >Atualize informações da sua tarefa!</h2>
+                <input type="text" id="namePut" placeholder="Novo nome da Tarefa">
+                <textarea type="text" id="descTaskPut" placeholder="Nova descrição da Tarefa"></textarea>
+                <button class="registerTask" id="registerTaskButtonPut">Atualizar</button>
+                <span class="notice" id="noticePut"></span>
+            </div>
+        </div>
+
+        <div class="modalRiskResponse" id="modalResponse">
+             <div class="requestCertaintyResponse">
+                <p id="closeResponse" id="closeResponse">x</p>
+                <div id="idCardCurrent"></div>
+                <button class="responseButton" id="responseButton"></button>
+            </div>
+        </div>
+
+    </body>
+</html>
+

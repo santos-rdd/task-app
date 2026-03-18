@@ -1,0 +1,7 @@
+{
+  "type":"module",
+  "dependencies": {
+    "mysql2": "^3.19.1",
+    "node": "^25.8.1"
+  }
+}
