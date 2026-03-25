@@ -3,10 +3,10 @@
 import mysql from 'mysql2/promise';
 
 const db = await mysql.createConnection({
-    user: '????????',
-    password: '????????',
-    host: '????????',
-    database: '????????'
+    user: 'aprendendo9',
+    password: '2132',
+    host: 'localhost',
+    database: 'pratica9'
 });
 
 // Create server 
